@@ -13,15 +13,15 @@ body{
 /* !GENERICS */
 
 header{
-    border: 2px solid black;
     height: 80px;
     justify-content: space-between;
-    align-items: center;
+    background-color: white;
     position: fixed;
     top:0;
     left: 0;
     right: 0;
     z-index: 1;
+    font-weight: 600;
 }
 
 main{
@@ -29,17 +29,18 @@ main{
 }
 
 ul {
-
+    list-style-type: none;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 h1 {
-    height: 150px;
-    border: 1px dashed black;
-    background-color: bisque;
+    font-size: 5rem;
+    font-weight: 900;
+
 }
 
 h2{
@@ -67,20 +68,50 @@ footer{
     background-color: #B4D0E7;
 }
 
+.btn {
+    padding: 5px 15px;
+    margin-right: 10px ;
+}
+
 /*  ! HEADER */
 
-.container-header-lef, .container-header-right {
-    border: 1px dashed black;
-    height: 80px;
-    width: 400px;
+.container-header-lef, .container-header-right  {
+    align-items: center;
 }
 
-.logo{
+.container-header-lef li, .container-header-right li{
     height: 100%;
-    width: 200px;
-    border: 1px dashed black;
-    background-color: aqua;
+    display: inline-block;
+    padding: 0 20px;
 }
+
+.link{
+    flex-direction: row;
+}
+
+.logo {
+    padding: 0 20px;
+}
+
+.log-in {
+    padding: 0 20px
+}
+
+.join {
+    background-color: #0061FF;
+    color: white;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ! MAIN */
 
@@ -246,16 +277,10 @@ footer{
     height: 500px;
     border: 1px dashed black;
     background-color: tomato;
-    
-}
-
-.container-item-footer{
-    /* flex-direction: row; */
 }
 
 .language {
     height: 50px;
     border: 1px dashed black;
     background-color: aqua;
-
 }
