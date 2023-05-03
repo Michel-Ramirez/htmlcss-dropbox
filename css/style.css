@@ -21,7 +21,6 @@ header{
     left: 0;
     right: 0;
     z-index: 1;
-    font-weight: 600;
 }
 
 main{
@@ -38,15 +37,15 @@ a {
 }
 
 h1 {
-    font-size: 5rem;
+    padding: 50px 0;
+    font-size: 80px;
     font-weight: 900;
 
 }
 
 h2{
-    height: 100px;
-    border: 1px dashed black;
-    background-color: bisque;
+    margin-top: 200px;
+    font-size: 2.5rem;
 }
 
 footer{
@@ -62,6 +61,7 @@ footer{
 .container{
     width: 1200px;
     margin: 0 auto;
+    border: 2px dashed red;
 }
 
 .bg-main{
@@ -71,6 +71,14 @@ footer{
 .btn {
     padding: 5px 15px;
     margin-right: 10px ;
+    background-color: #0061FF;
+    color: white;
+}
+
+.container-stretch{
+    width: 1080px;
+    margin: 0 auto;
+    border: 2px dashed green;
 }
 
 /*  ! HEADER */
@@ -94,60 +102,67 @@ footer{
 }
 
 .log-in {
-    padding: 0 20px
+    padding: 0 20px;
+    background-color: white;
+    color: black;
 }
 
 .join {
-    background-color: #0061FF;
     color: white;
     margin-right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ! MAIN */
 
 /* JUMBOTRON */
 
 .description-main{
-    flex-direction: column;
-    width: 40%;
-    border: 1px dashed black;
-    background-color: tomato;
+    max-width: 40%;
+   
 }
 
-.img-jumbotron{
-    height: 400px;
-    width: 60%;
-    border: 1px dashed black;
-    background-color: aquamarine;
+.img-jumbotron {
+    max-height:400px;
+}
+
+.img-jumbotron img{
+    max-height: 500px; 
+}
+
+.description-main p {
+    padding-bottom: 50px;
+}
+
+.description-main span{
+    display: block;
+    padding-top: 50px;
+}
+
+.fa-arrow-down {
+    margin-top: 70px;
+    font-size: 3rem;
 }
 
 /* BILLING */
 
-.bill-monthly{
-    height: 50px;
-    width: 150px;
-    border: 1px dashed black;
-    background-color: violet;
+.billing {
     display: inline-block;
-    margin-left: 30px;
+}
+
+.fa-circle {
+    padding: 10px;
+}
+
+.fa-circle:hover {
+    color:#0061FF;
+}
+
+.bill-monthly{
+    display: inline-block;
     margin-top: 30px;
 }
 
 .bill-annual{
-    height: 50px;
-    width: 150px;
-    border: 1px dashed black;
-    background-color: violet;
     display: inline-block;
 }
 
@@ -167,7 +182,7 @@ footer{
 }
 
 .column-services-plans {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* SPECIAL PLAN */
@@ -222,11 +237,12 @@ footer{
 .container-bussiness-plan{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
 .card {
-    width: 400px;
+    width: 300px;
     height: 500px;
     border: 1px dashed black;
     background-color: skyblue;
