@@ -93,10 +93,6 @@ footer{
     padding: 0 20px;
 }
 
-.link{
-    flex-direction: row;
-}
-
 .logo {
     padding: 0 20px;
 }
@@ -146,44 +142,75 @@ footer{
 /* BILLING */
 
 .billing {
-    display: inline-block;
-}
-
-.fa-circle {
-    padding: 10px;
-}
-
-.fa-circle:hover {
-    color:#0061FF;
-}
-
-.bill-monthly{
-    display: inline-block;
-    margin-top: 30px;
+    margin: 30px 0;
+    align-items: center;
 }
 
 .bill-annual{
-    display: inline-block;
+    margin-left: 50px;
 }
+
+.bill-monthly, .bill-annual{
+    height: 18px;
+    width: 18px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.bill-monthly:hover, .bill-annual:hover{
+    border: 5px solid #0061FF;
+}
+
 
 /* SERVICES PLANS */
-
-.services-plans{
-    height: 600px;
-    width: 300px;
-    border: 1px dashed black;
-    background-color: slateblue;
-
-}
-
-.individual, .team, .bussiness{
-    border: 1px solid black;
-    height: 50px;
-}
 
 .column-services-plans {
     justify-content: space-between;
 }
+
+.description-plan {
+    flex-direction: column;
+    padding: 0 50px
+}
+
+.services-plans{
+    max-width: 330px;
+    border: 1px solid rgba(128, 128, 128, 0.66);
+
+}
+
+.individual, .team, .bussiness{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.66);
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* SPECIAL PLAN */
 
