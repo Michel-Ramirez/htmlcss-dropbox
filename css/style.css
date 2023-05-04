@@ -10,6 +10,14 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+/* ! ROOT */
+
+:root {
+    --color-main-btn: #0061FF;
+    --bg-color-main: #B4D0E7;
+}
+
+
 /* !GENERICS */
 
 header{
@@ -22,7 +30,7 @@ header{
     right: 0;
     z-index: 1;
     border-bottom: 1px solid gray;
-    box-shadow: 0 1px 5px 5px rgba(205, 202, 202, 0.197);
+    box-shadow: 0 1px 5px 5px rgba(148, 146, 146, 0.197);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
 
@@ -64,7 +72,11 @@ footer{
 }
 
 .fa-check {
-    color: #0061FF;
+    color: var(--color-main-btn);
+}
+
+.faq-questions:hover, .fa-angle-down:hover, #language-list:hover {
+    cursor: pointer;
 }
 
 /* !UTILITY */
@@ -79,13 +91,13 @@ footer{
 }
 
 .bg-main{
-    background-color: #B4D0E7;
+    background-color: var(--bg-color-main);
 }
 
 .btn {
     padding: 5px 15px;
     margin-right: 10px ;
-    background-color: #0061FF;
+    background-color: var(--color-main-btn);
     color: white;
 }
 
@@ -126,8 +138,7 @@ footer{
 /* JUMBOTRON */
 
 .description-main{
-    max-width: 40%;
-   
+    max-width: 40%;  
 }
 
 .img-jumbotron {
@@ -176,7 +187,7 @@ footer{
 }
 
 .bill-monthly:hover, .bill-annual:hover{
-    border: 5px solid #0061FF;
+    border: 5px solid var(--color-main-btn);
 }
 
 
@@ -188,7 +199,7 @@ footer{
 
 .description-plan {
     flex-direction: column;
-    padding: 0 50px
+    padding: 0 50px;
 }
 
 .description-plan *{
@@ -343,7 +354,7 @@ footer{
 
 .discover-more a {
     text-decoration: underline;
-    color: #0061FF;
+    color: var(--color-main-btn);
 }
 
 /* CONTAINER JUMBO IMG */
@@ -361,7 +372,6 @@ footer{
 
 .container-midle{
     width: calc(100% / 3);
-
     height: 600px;
     border: 1px dashed black;
     background-color: #F5F5F5;
@@ -369,9 +379,9 @@ footer{
 
 .container-left img, .container-right img{
     width: calc(100% / 2);
+    height: calc(100% /2);
     object-fit:contain;  /*PROPIETY USE TO CONTAIN IMG IN A DIV */
-    padding: 50px;
-    
+    padding: 50px;    
 }
 
 /* CONTAINER-LEFT */
@@ -453,10 +463,6 @@ footer{
     border-bottom: 1px solid black;
 }
 
-.faq-questions:hover {
-    cursor: pointer;
-}
-
 .container-questions {
     justify-content: space-between;
 }
@@ -507,10 +513,6 @@ footer{
     padding-bottom: 100px;
     padding-top: 100px;
     display: inline-block;
-}
-
-.language:hover {
-    cursor: pointer;
 }
 
 #language-list{
