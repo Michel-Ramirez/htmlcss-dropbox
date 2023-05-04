@@ -48,8 +48,17 @@ h2{
     font-size: 2.5rem;
 }
 
+h6 {
+    margin-top: 90px;
+    font-size: 1rem;
+}
+
 footer{
     background-color: #000000;
+}
+
+.fa-check {
+    color: #0061FF;
 }
 
 /* !UTILITY */
@@ -178,6 +187,10 @@ footer{
     padding: 10px 0;
 }
 
+.description-plan:last-child{
+    padding-bottom: 50px;
+}
+
 .services-plans{
     max-width: 330px;
     border: 1px solid rgba(128, 128, 128, 0.66);
@@ -206,15 +219,20 @@ footer{
 
 .trial-30{
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .shop-now{
     text-decoration: underline;
     color: blue;
+    padding-left: 5px;
 }
 
-
-
+.separator {
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
 
 
 
