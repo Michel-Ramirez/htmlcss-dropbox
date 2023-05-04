@@ -200,6 +200,12 @@ footer{
 .individual, .team, .bussiness{
     border-bottom: 1px solid rgba(128, 128, 128, 0.66);
     height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.individual i, .team i, .bussiness i{
+    padding-right: 5px;
 }
 
 .description-plan h4 {
