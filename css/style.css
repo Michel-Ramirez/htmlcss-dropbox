@@ -357,7 +357,7 @@ footer{
     color: var(--color-main-btn);
 }
 
-/* CONTAINER JUMBO IMG */
+/* CONTAINER JUMBO svg BUSINESS PARTNER */
 
 .container-jumbo-img{
     margin-top: 50px;
@@ -380,8 +380,29 @@ footer{
 .container-left img, .container-right img{
     width: calc(100% / 2);
     height: calc(100% /2);
-    object-fit:contain;  /*PROPIETY USE TO CONTAIN IMG IN A DIV */
-    padding: 50px;    
+    object-fit:contain;  /*PROPIETY USE TO CONTAIN svg IN A DIV */
+    padding: 30px;    
+}
+
+.container-logo-partner {
+    margin: 30px;
+    padding-bottom: 50px;
+    width: 20%;
+    border-bottom: 1px solid gray;
+}
+
+.container-logo-partner svg{
+    max-width: 250px;
+    object-fit:contain;
+}
+
+.description-business-partner p {
+    padding: 30px 30px;
+    padding-bottom: 50px;
+}
+
+.description-business-partner span {
+    padding: 0 30px;
 }
 
 /* CONTAINER-LEFT */
