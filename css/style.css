@@ -40,7 +40,6 @@ h1 {
     padding: 50px 0;
     font-size: 80px;
     font-weight: 900;
-
 }
 
 h2{
@@ -48,8 +47,12 @@ h2{
     font-size: 2.5rem;
 }
 
+h4 {
+    font-size: 1.5rem;
+
+}
+
 h6 {
-    margin-top: 90px;
     font-size: 1rem;
 }
 
@@ -197,7 +200,7 @@ footer{
 
 }
 
-.individual, .team, .bussiness{
+.individual, .team, .bussiness, .bussiness-team {
     border-bottom: 1px solid rgba(128, 128, 128, 0.66);
     height: 50px;
     justify-content: center;
@@ -209,9 +212,13 @@ footer{
 }
 
 .description-plan h4 {
-    font-size: 1.5rem;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 20px;
+
+}
+
+.description-plan h6 {
+    margin-top: 90px;
 }
 
 .description-plan span i{
@@ -241,39 +248,33 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SPECIAL PLAN */
 
 .container-special-plan{
-    border: 1px dashed black;
-    background-color: seagreen;
+    border: 1px solid rgba(128, 128, 128, 0.66);
     margin-top: 50px;
     flex-direction: column;
 }
 
-.bussiness-team{
-    height: 50px;
-    border: 1px solid black;
-    background-color: coral;
+
+.titol-special-plan {
+   max-width: 70%;
+   padding: 20px;
+}
+
+.titol-special-plan h4{
+    padding-bottom: 20px;
+}
+
+.titol-special-plan p {
+    padding-top: 50px ;
 }
 
 .name-spacial-plan{
-    height: 150px;
-    border: 1px solid black;
-    background-color: lightgreen;
+    padding: 40px 20px;
+    justify-content: space-between;
+    
+    
 }
 
 .description-special-plan{
@@ -281,6 +282,10 @@ footer{
     border: 1px solid black;
     background-color: lightpink;
 }
+
+
+
+
 
 /* PARTNER */
 
