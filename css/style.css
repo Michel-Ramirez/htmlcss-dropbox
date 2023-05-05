@@ -387,92 +387,93 @@ footer{
     color: var(--color-main-btn);
 }
 
-/* CONTAINER JUMBO svg BUSINESS PARTNER */
+/* BUSINESS PARTNER */
 
-.container-jumbo-img{
-    margin-top: 50px;
+.partner {
+    margin: 100px 0;
 }
 
-.container-left, .container-right{
-    width: calc(100% / 3);
-    height: 600px;
-    justify-content: row;
+.square{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    display: flex;
     flex-wrap: wrap;
 }
 
-/* USARE 100VW AL POSTO DEL 100% */
-
-
-/* USARE :HOVER 15PX SOLID TRANSPARENT PER EVITARE EFFETTO RIMPICCIOLIMENTO IMG */
-
-.container-midle{
-    width: calc(100% / 3);
-    height: 600px;
-    border: 1px dashed black;
-    background-color: #F5F5F5;
+.square > .small-square {
+    flex-basis: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-left img, .container-right img{
-    width: calc(100% / 2);
-    height: calc(100% /2);
-    object-fit:contain;  /*PROPIETY USE TO CONTAIN svg IN A DIV */
-    padding: 30px;    
+.partner img, .partner svg{
+    width: 50%;
+    height: auto;
 }
 
-.container-logo-partner {
-    margin: 30px;
-    padding-bottom: 50px;
-    width: 20%;
-    border-bottom: 1px solid gray;
+.small-square:hover {
+  border: 15px solid rgba(255, 255, 255, 0.5);
 }
 
-.container-logo-partner svg{
-    max-width: 250px;
-    object-fit:contain;
+.square.midle {
+    display: block;
 }
 
-.description-business-partner p {
-    padding: 30px 30px;
-    padding-bottom: 50px;
+.partner svg {
+    margin: 20px 30px;
 }
 
-.description-business-partner span {
+.square .separator{
+    margin-left: 30px;
+    width: 25%;
+}
+
+.square.midle p {
     padding: 0 30px;
 }
 
 /* CONTAINER-LEFT */
 
-.container-left img:first-child{
+.bgc-green{
     background-color: #A2D39B;
 }
 
-.container-left img:nth-child(2) {
+.bgc-brown {
     background-color: #61082B;
 }
 
-.container-left img:nth-child(3){
+.bgc-skyblue{
     background-color: #0093CE;
 }
 
-.container-left img:last-child {
+.bgc-red {
     background-color: #FF1C1C;
 }
 
+/* SQUARE CENTER  */
+
+.bgc-gray {
+    background-color: #F5F5F5;
+}
+
+
 /* CONTAINER-RIGHT */
 
-.container-right img:first-child{
+.bgc-dark-red{
     background-color: #D5001F;
 }
 
-.container-right img:nth-child(2) {
+.bgc-light-blue {
     background-color: #B4D0E7;
 }
 
-.container-right img:nth-child(3){
+.bgc-dark-blue{
     background-color: #0D2481;
 }
 
-.container-right img:last-child {
+.bgc-yellow {
     background-color: #FFD830;
 }
 
