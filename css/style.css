@@ -29,22 +29,23 @@ header{
     left: 0;
     right: 0;
     z-index: 1;
-    border-bottom: 1px solid gray;
     box-shadow: 0 1px 5px 5px rgba(148, 146, 146, 0.197);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-}
-
-main{
-    margin-top: 80px;
 }
 
 ul {
     list-style-type: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 h1 {
@@ -81,6 +82,31 @@ footer{
 
 /* !UTILITY */
 
+
+.bg-main{
+    background-color: var(--bg-color-main);
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--color-main-btn);
+    color: white;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+/* UTILITY LAYOUT */
+
 .d-flex{
     display: flex;
 }
@@ -90,21 +116,19 @@ footer{
     margin: 0 auto;
 }
 
-.bg-main{
-    background-color: var(--bg-color-main);
-}
-
-.btn {
-    padding: 5px 15px;
-    margin-right: 10px ;
-    background-color: var(--color-main-btn);
-    color: white;
-}
-
 .container-stretch{
     width: 1080px;
     margin: 0 auto;
 }
+
+.col-30{
+    flex-basis: 30%;
+}
+
+.col-70 {
+    flex-basis: 70%;
+}
+
 
 /*  ! HEADER */
 
@@ -137,34 +161,19 @@ footer{
 
 /* JUMBOTRON */
 
-.description-main{
-    max-width: 40%;  
+#jumbotron {
+    background-color: var(--bg-color-main);
+    min-height: 850px;
 }
 
-.img-jumbotron {
-    max-height:400px;
+#jumbotron .container{
+    position: relative;
+    top: 120px; 
 }
 
-.img-jumbotron img{
-    max-height: 500px; 
-}
-
-.description-main p {
-    padding-bottom: 50px;
-}
-
-.description-main span{
-    display: block;
-    padding-top: 50px;
-}
-
-.fa-arrow-down {
-    margin-top: 70px;
-    font-size: 3rem;
-}
-
-.description-main .free-trial {
-    padding: 10px 30px;
+.free-trial {
+    padding: 10px 10px;
+    display: inline-block;
 }
 
 /* BILLING */
@@ -190,6 +199,7 @@ footer{
     border: 5px solid var(--color-main-btn);
 }
 
+/* USARE DOCUMENTAZIONE DELLA LIBRERIA  */
 
 /* SERVICES PLANS */
 
@@ -202,19 +212,6 @@ footer{
     padding: 0 50px;
 }
 
-.description-plan *{
-    padding: 10px 0;
-}
-
-.description-plan:last-child{
-    padding-bottom: 50px;
-}
-
-.services-plans{
-    max-width: 330px;
-    border: 1px solid rgba(128, 128, 128, 0.66);
-}
-
 .individual, .team, .bussiness, .bussiness-team {
     border-bottom: 1px solid rgba(128, 128, 128, 0.66);
     height: 50px;
@@ -222,33 +219,23 @@ footer{
     align-items: center;
 }
 
-.individual i, .team i, .bussiness i, .bussiness-team i{
-    padding-right: 5px;
+.description-plan *{
+    padding: 10px 0;
+}
+
+.services-plans{
+    max-width: 330px;
+    border: 1px solid rgba(128, 128, 128, 0.66);
 }
 
 .description-plan h4 {
     padding-top: 50px;
     padding-bottom: 20px;
-
-}
-
-.description-plan h6 {
-    margin-top: 90px;
-}
-
-.description-plan span i{
-    padding-right: 5px;
-    line-height: 0;
-}
-
-.n-user{
-    padding-top: 50px;
 }
 
 .trial-30{
+    padding: 10px 20px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
 }
 
 .shop-now{
@@ -258,9 +245,14 @@ footer{
 }
 
 .separator {
-    padding-bottom: 50px;
+    margin: 50px 0;
+    width: 50px;
     border-bottom: 1px solid gray;
 }
+
+/* ICONS */
+
+.
 
 /* SPECIAL PLAN */
 
@@ -371,6 +363,11 @@ footer{
     flex-wrap: wrap;
 }
 
+/* USARE 100VW AL POSTO DEL 100% */
+
+
+/* USARE :HOVER 15PX SOLID TRANSPARENT PER EVITARE EFFETTO RIMPICCIOLIMENTO IMG */
+
 .container-midle{
     width: calc(100% / 3);
     height: 600px;
@@ -452,7 +449,7 @@ footer{
 .try-business-plan h2{
     color: #61082B;
     margin-bottom: 150px;
-    width: 40%;
+    width: 50%;
 }
 
 .cnt-btn-free-trail {
@@ -493,6 +490,7 @@ footer{
     margin-right: 50px;
 }
 
+/* ! IN HOVER DEVE MOSTRARE LA RISPOSTA */
 
 /* 
 .faq-questions:active .faq-answer{
