@@ -199,7 +199,6 @@ footer{
     border: 5px solid var(--color-main-btn);
 }
 
-/* USARE DOCUMENTAZIONE DELLA LIBRERIA  */
 
 /* SERVICES PLANS */
 
@@ -212,7 +211,7 @@ footer{
     padding: 0 50px;
 }
 
-.individual, .team, .bussiness, .bussiness-team {
+.individual, .team, .business, .business-team {
     border-bottom: 1px solid rgba(128, 128, 128, 0.66);
     height: 50px;
     justify-content: center;
@@ -250,9 +249,47 @@ footer{
     border-bottom: 1px solid gray;
 }
 
+.individual i, .team i, .business i, .business-team i {
+    padding-right: 5px;
+}
+
 /* ICONS */
 
-.
+.description-plan li {
+    padding-left: 1rem ;
+    text-indent: -0.7rem;
+}
+
+.description-plan li::before{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.description-plan li.check::before{
+    font: var(--fa-font-solid);
+    content: "\f00c";
+    color: var(--color-main-btn);
+    padding-right: 5px;
+}
+
+.description-plan li.folder::before{
+    font: var(--fa-font-solid);
+    content: "\f07b";
+    padding-right: 5px;
+}
+
+.description-plan li.n-user::before{
+    font: var(--fa-font-solid);
+    content: "\f007";
+    padding-right: 5px;
+}
+
+.description-plan li.fa-share::before{
+    font: var(--fa-font-solid);
+    content: "\f1e0";
+    padding-right: 5px;
+}
 
 /* SPECIAL PLAN */
 
@@ -319,9 +356,9 @@ footer{
     margin-top: 20px
 }
 
-/* SECTION BUSSINESS PLAN  */
+/* SECTION BUSINESS PLAN  */
 
-.container-bussiness-plan{
+.container-business-plan{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
