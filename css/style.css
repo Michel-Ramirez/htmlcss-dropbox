@@ -508,6 +508,10 @@ header ul li a:hover{
 
 /* FAQ */
 
+.faq {
+    margin-bottom: 200px;
+}
+
 .faq h2 {
     margin-bottom: 50px;
 }
@@ -519,18 +523,20 @@ header ul li a:hover{
 
 .faq-questions {
     font-weight: 600;
+    position: relative;
 }
 
 .faq:last-child{
     border-bottom: 1px solid black;
 }
 
-
 .fa-angle-down {
-    margin-right: 50px;
+    position: absolute;
+    right: 50px;
+    top: 0;
 }
 
-.faq-questions:hover, .fa-angle-down:hover, #language-list:hover {
+.faq-questions:hover, .fa-angle-down:hover, #language-list:hover{
     cursor: pointer;
 }
 
@@ -541,7 +547,8 @@ header ul li a:hover{
 
 .answer {
     display: none;
-    padding: 10px 30px;
+    padding: 0 30px;
+    padding-top: 20px;
     font-style: italic;
 }
 
@@ -549,7 +556,7 @@ header ul li a:hover{
     display: block;
 }
 
-.
+
 /* ! IN HOVER DEVE MOSTRARE LA RISPOSTA */
 
 
@@ -568,10 +575,6 @@ header ul li a:hover{
     padding-bottom: 40px;
 }
 
-.container-item-footer {
-    margin-top: 200px;
-
-}
 .column-footer{
     width: calc(100% / 5);
     padding: 100px 0;
