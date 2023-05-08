@@ -213,7 +213,7 @@ header ul li a:hover{
 
 .description-plan {
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 40px;
 }
 
 .individual, .team, .business, .business-team {
@@ -555,13 +555,6 @@ header ul li a:hover{
 .faq-questions:hover + .answer{
     display: block;
 }
-
-
-/* ! IN HOVER DEVE MOSTRARE LA RISPOSTA */
-
-
-
-
 
 /* ! FOOTER */
 
