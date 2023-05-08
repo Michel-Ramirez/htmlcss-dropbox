@@ -525,9 +525,6 @@ header ul li a:hover{
     border-bottom: 1px solid black;
 }
 
-.container-faq {
-    justify-content: space-between;
-}
 
 .fa-angle-down {
     margin-right: 50px;
@@ -537,18 +534,22 @@ header ul li a:hover{
     cursor: pointer;
 }
 
-.faq p {
-    font-style: italic;
-    padding: 0 50px;
-    margin-bottom: 30px;
+.container-faq {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
     display: none;
 }
 
-/* ! IN HOVER DEVE MOSTRARE LA RISPOSTA */
-
-.faq-questions:hover, .fa-angle-down:hover + .container-faq p{
+.faq-questions.hover + .answer{
     display: block;
 }
+/* ! IN HOVER DEVE MOSTRARE LA RISPOSTA */
+
+
+
 
 
 /* ! FOOTER */
