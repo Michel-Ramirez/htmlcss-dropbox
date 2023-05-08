@@ -541,11 +541,15 @@ header ul li a:hover{
 
 .answer {
     display: none;
+    padding: 10px 30px;
+    font-style: italic;
 }
 
-.faq-questions.hover + .answer{
+.faq-questions:hover + .answer{
     display: block;
 }
+
+.
 /* ! IN HOVER DEVE MOSTRARE LA RISPOSTA */
 
 
