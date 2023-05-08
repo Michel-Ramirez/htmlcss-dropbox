@@ -76,10 +76,6 @@ footer{
     color: var(--color-main-btn);
 }
 
-.faq-questions:hover, .fa-angle-down:hover, #language-list:hover {
-    cursor: pointer;
-}
-
 /* !UTILITY */
 
 
@@ -137,7 +133,6 @@ footer{
 }
 
 .container-header-lef li, .container-header-right li{
-    height: 100%;
     display: inline-block;
     padding: 0 20px;
 }
@@ -155,6 +150,16 @@ footer{
 .join {
     color: white;
     margin-right: 20px;
+}
+
+header ul a{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid gray;
 }
 
 /* ! MAIN */
@@ -520,7 +525,7 @@ footer{
     border-bottom: 1px solid black;
 }
 
-.container-questions {
+.container-faq {
     justify-content: space-between;
 }
 
@@ -528,12 +533,22 @@ footer{
     margin-right: 50px;
 }
 
+.faq-questions:hover, .fa-angle-down:hover, #language-list:hover {
+    cursor: pointer;
+}
+
+.faq p {
+    font-style: italic;
+    padding: 0 50px;
+    margin-bottom: 30px;
+    display: none;
+}
+
 /* ! IN HOVER DEVE MOSTRARE LA RISPOSTA */
 
-/* 
-.faq-questions:active .faq-answer{
-    display: block ;
-} */
+.faq-questions:hover, .fa-angle-down:hover + .container-faq p{
+    display: block;
+}
 
 
 /* ! FOOTER */
